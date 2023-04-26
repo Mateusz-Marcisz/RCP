@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>token</title>
+    <meta http-equiv="refresh" content="5">
+    <style type="text/css" media="screen">
+        @import "compass/css3";
+
+        body {
+                width: 100%;
+                height: 100%;
+                font-family: "helvetica neue", helvetica, arial, sans-serif;
+                font-size: 300px;
+                text-align: center;
+                background: rgb(166, 154, 231) ;
+            }
+            </style>
+</head>
+<body>
+
+    <%=token%>
+<script>
+
+var token= <%- token %>;
+token = token +2;
+console.log(token);
+
+//window.setInterval(location.reload(true), 50000);
+
+</script>
+
+</body>
+</html> 

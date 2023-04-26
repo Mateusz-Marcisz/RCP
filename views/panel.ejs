@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Login</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+<style>
+
+
+/*****************
+  THE MAGIC
+*****************/
+input:focus {
+  box-shadow: 0 0 3000px 3000px rgba(151, 125, 48, 0.3);
+  position: relative;
+  z-index: 99999;
+}
+/*****************
+  END MAGIC
+*****************/
+
+
+/* Optional Demo Styles */
+
+body {
+  background: #3718c25d;
+  font-weight: bold;
+  font-family: "Lucida Grande", sans-serif;
+  padding: 20px;
+  color: rgba(13, 0, 83, 0.76);
+  font-size: 12px;
+  letter-spacing: -1px;
+
+}
+input {
+  font-size: 21px;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0;
+  outline:0;
+  border:0;
+  padding: 10px 10px;
+  font-size: 13px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow:inset 0 0 2px rgba(0,0,0,0.5);
+}
+.button {
+   border-top: 1px solid #d1dba2;
+   background: #6e7324;
+   background: -webkit-gradient(linear, left top, left bottom, from(#bda96e), to(#666933));
+   background: -webkit-linear-gradient(top, #bda96e, #666933);
+   background: -moz-linear-gradient(top, #bda96e, #666933);
+   background: -ms-linear-gradient(top, #bda96e, #666933);
+   background: -o-linear-gradient(top, #bda96e, #666933);
+   padding: 10px 16px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 0;
+   box-shadow: rgba(0,0,0,0.1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.8) 0 1px 0;
+   color: white;
+   font-size: 13px;
+   text-decoration: none;
+   vertical-align: middle;
+    width: auto;
+   }
+.button:hover {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   color: #a7b828;
+   text-shadow: none;
+   cursor: pointer;
+   }
+.button:active {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   }
+
+
+
+
+
+</style>
+	</head>
+	<body>
+
+		<form action="/zapytanie" method="post">
+			<div class="form-group">
+				<label class="form-control-label">dodaj wejscie<br><br></label>
+				user <input type="text" class="form-control" name="user" id="user" required i placeholder="user">
+				data zmiany <input type="date" class="form-control" name="zmiennaa" id="zmiennaa" required i placeholder="First Name">
+				godzina zmiany <input type="time" class="form-control" name="zmiennab" id="zmiennab" required i placeholder="First Name">
+			</div>
+			<button type="submit" class="button-hover" name="co" id="co" value="dodajwe" >dodaj wejscie</button>
+		  </form>
+<br>
+<form action="/zapytanie" method="post">
+	<div class="form-group">
+		<label class="form-control-label">dodaj wyjscie<br><br></label>
+		user <input type="text" class="form-control" name="user" id="user" required i placeholder="user">
+		data zmiany <input type="date" class="form-control" name="zmiennaa" id="zmiennaa" required i placeholder="First Name">
+		godzina zmiany <input type="time" class="form-control" name="zmiennab" id="zmiennab" required i placeholder="First Name">
+	</div>
+	<button type="submit" class="button-hover" name="co" id="co" value="dodajwy" >dodaj wyjscie</button>  </form>
+  <br>
+
+
+
+
+  <form action="/zapytanie" method="post">
+	<div class="form-group">
+		<label class="form-control-label">zmien haslo<br><br></label>
+		user <input type="text" class="form-control" name="user" id="user" required i placeholder="user">
+		nowe haslo <input type="password" class="form-control" name="haslo" id="haslo" required i placeholder="First Name">
+	</div>
+	<button type="submit" class="button-hover" name="co" id="co" value="zm" >zmien haslo</button>  </form>
+
+	<br>
+
+
+	<form action="/zapytanie" method="post">
+		<div class="form-group">
+			<label class="form-control-label">dodaj usera<br><br></label>
+			usera <input type="text" class="form-control" name="user" id="user" required i placeholder="dodaj user">
+			haslo <input type="password" class="form-control" name="haslo" id="haslo" required i placeholder="First Name">
+			email <input type="email" class="form-control" name="email" id="email" required i placeholder="email">
+		</div>
+		<button type="submit" class="button-hover" name="co" id="co" value="do" >dodaj usera</button>  </form>
+		<br>
+		<form action="/logout" method="post">
+			<button type="submit" class="button-hover" name="zmienna" id="zmienna" class="item">logout </button>
+		  </form>
+	</body>
+</html>
